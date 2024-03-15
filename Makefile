@@ -20,7 +20,7 @@ fn.stop:
 	docker rm $(CONTAINER_NAME)
 
 # Clean up Docker resources
-fn.clean:
+fn.clean: fn.stop
 	docker rmi $(IMAGE_NAME)
 
 # Default target
