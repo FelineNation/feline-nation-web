@@ -7,7 +7,7 @@ fn.test:
 	npm test
 
 # Build the Docker image
-fn.build: fn.test
+fn.build: 
 	docker build -t $(IMAGE_NAME) .
 
 # Run the Docker container

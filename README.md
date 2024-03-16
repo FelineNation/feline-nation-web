@@ -1,10 +1,23 @@
-# Getting Started with Create React App
+# Feline Nation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A platform for cat lovers
 
-## Available Scripts
+## Setup the project
 
 In the project directory, you can run:
+### Docker (Preferred)
+
+To run project with docker
+``` bash
+Make fn.run
+```
+Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+
+Stop and clean up
+
+```
+Make fn.clean
+```
 
 ### `npm start`
 
