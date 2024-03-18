@@ -1,6 +1,6 @@
 import { styled } from "@mui/system";
 import { createTheme } from "@mui/material/styles";
-import { Paper, Box } from "@mui/material";
+import { Box } from "@mui/material";
 
 export const theme = createTheme({
   palette: {
@@ -9,19 +9,20 @@ export const theme = createTheme({
       black: "#000000",
     },
     primary: {
-      main: "#fff",
+      main: "#000",
     },
   },
 });
 
 export const FooterStyle = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-  color: theme.palette.common.black,
+  color: theme.palette.common.white,
   padding: theme.spacing(2),
-  textAlign: "center",
-  height: "10px",
-  borderRadius: "0",
-  fontFamily: "Comic Sans MS, cursive, sans-serif",
+}));
+
+export const FooterLink = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.primary.main,
+  display: "flex",
+  justifyContent: "center",
   alignItems: "center",
-  bottom: "0",
 }));

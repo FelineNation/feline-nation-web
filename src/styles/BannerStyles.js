@@ -9,7 +9,7 @@ export const theme = createTheme({
       black: "#000000",
     },
     primary: {
-      main: "#334",
+      main: "#000",
     },
   },
 });
@@ -21,6 +21,6 @@ export const BannerStyle = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   height: "10px",
   borderRadius: "0",
-  fontFamily: 'Comic Sans MS, cursive, sans-serif',
+  fontFamily: "Comic Sans MS, cursive, sans-serif",
   alignItems: "center",
 }));
