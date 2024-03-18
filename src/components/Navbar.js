@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import { Login } from "@mui/icons-material";
 import { ThemeProvider } from "@mui/material/styles";
 import { NavbarButtons, theme } from "../styles/NavbarStyles";
