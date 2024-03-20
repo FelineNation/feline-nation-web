@@ -1,27 +1,14 @@
 import { styled } from "@mui/system";
-import { createTheme } from "@mui/material/styles";
 import { Box } from "@mui/material";
 
-export const theme = createTheme({
-  palette: {
-    common: {
-      white: "#ffffff",
-      black: "#000000",
-    },
-    primary: {
-      main: "#000",
-    },
-  },
-});
-
 export const FooterStyle = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.common.white,
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.text.primary,
   padding: theme.spacing(2),
 }));
 
 export const FooterLink = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
+  backgroundColor: theme.palette.background.default,
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

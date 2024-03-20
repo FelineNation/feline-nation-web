@@ -1,12 +1,10 @@
 import React from "react";
-import { ThemeProvider } from "@mui/material/styles";
 import { Typography, Button } from "@mui/material";
-import { FooterLink, FooterStyle, theme } from "../styles/FooterStyles";
+import { FooterLink, FooterStyle } from "../styles/FooterStyles";
 import { GitHub, Instagram, Web } from "@mui/icons-material";
 
 function Footer() {
   return (
-    <ThemeProvider theme={theme}>
       <FooterStyle align="center">
         {" "}
         {/* Add align="center" prop */}
@@ -19,7 +17,6 @@ function Footer() {
           <Button variant="contained" startIcon={<Web />} href="https://github.com/FelineNation/feline-nation-web" title="My personal site" />
         </FooterLink>
       </FooterStyle>
-    </ThemeProvider>
   );
 }
 
