@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Toolbar, Typography, Button } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { Login } from "@mui/icons-material";
-import { NavbarButtons, ThemedAppBar } from "../styles/NavbarStyles";
+import { NavbarButtons, ThemedAppBar, ThemedToolbar } from "../styles/NavbarStyles";
 
 function Navbar() {
   return (
     <ThemedAppBar component="div">
-      <Toolbar>
+      <ThemedToolbar>
         <Typography variant="h6" noWrap component="div">
           <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
             Feline Nation
@@ -18,7 +18,7 @@ function Navbar() {
             Login
           </Button>
         </NavbarButtons>
-      </Toolbar>
+      </ThemedToolbar>
     </ThemedAppBar>
   );
 }
